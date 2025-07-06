@@ -24,7 +24,7 @@ A simple full-stack blog application built with **Node.js**, **Express.js**, **M
 
 1. **Clone the repository:**
 
-   git clone https://github.com/your-username/blog-management.git  
+   git clone https://github.com/narsing64/blog-management.git  
    cd blog-management
 
 2. **Install dependencies:**
