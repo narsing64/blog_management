@@ -1,0 +1,25 @@
+<%- include("header.ejs") %>
+<link rel="stylesheet" href="/css/index-styles.css">
+
+<h1>Welcome to my blog management</h1>
+
+<% posts.forEach(post => { %>
+  <div class="posts">
+    <h2><%= post.title %></h2>
+    <p><%= post.text %></p>
+    <img src="<%= post.image %>" alt="<%= post.title %>">
+    <div style="margin-top: 10px;">
+      <a href="/edit/<%= post._id %>" class="btn btn-primary btn-sm">Edit</a>
+      <form method="POST" action="/delete/<%= post._id %>" style="display:inline;">
+        <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+      </form>
+    </div>
+  </div>
+<% }) %>
+
+<form method="GET" action="/create">
+  <input type="submit" value="Create Post">
+</form>
+
+</body>
+</html>

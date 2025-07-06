@@ -1,0 +1,18 @@
+<%- include("header.ejs") %>
+<link rel="stylesheet" href="/css/create-styles.css">
+
+<form method="POST" action="/submit">
+  <label for="heading">Heading</label>
+  <input type="text" name="heading" required>
+
+  <label for="image">Image URL</label>
+  <input type="text" name="image" required>
+
+  <label for="text">Text</label>
+  <textarea name="text" rows="10" cols="50" required></textarea>
+
+  <input type="submit" value="Create Post">
+</form>
+
+</body>
+</html>
